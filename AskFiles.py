@@ -7,6 +7,7 @@ from programs import PairOdds as ListPairsAndOdds, DeadBody as DeadBodyGame, bus
 __author__ = "Danny Sequeira"
 __copyright__ = "Copyright (C) 2021 Danny Sequeira"
 
+
 # Method to say Hi to the user, and ask the program that wants to use
 def welcome():
     print("Bienvenido al Instrumento II ")
@@ -43,6 +44,3 @@ def use_programs(user_program_decision):
         DeadBodyGame.start_program()
     elif user_program_decision == 9:
         BusStation.start_program()
-
-
-

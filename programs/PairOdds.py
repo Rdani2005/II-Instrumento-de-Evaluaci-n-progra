@@ -12,8 +12,8 @@ num_list = []
 # Methods
 # # Says if the num is pair or not
 def compare_nums():
-    index = int(input("Cuantos numeros desea ingresar?: "))
-    for i in range (0, index):
+
+    for i in range (0, 10):
         num = int(input("Ingrese un numero: "))
         num_list.append(num)
         if num % 2 == 0:
@@ -36,9 +36,12 @@ def print_list():
 
 # # start the program
 def start_program():
+
     print("Bienvenido al programa Lista Pares e Impares: ")
     should_continue = True
     while should_continue:
+        pair_list.clear()
+        odd_list.clear()
         compare_nums()
         print_list()
         user_decision = int(input("Desea insetar otra lista de numeros (1.si 2.no): "))
@@ -55,5 +58,3 @@ def start_program():
             pair_list.clear()
             odd_list.clear()
             num_list.clear()
-
-

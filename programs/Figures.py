@@ -74,5 +74,3 @@ def start_program():
             print("Perfecto, volvamos al principio")
         else:
             print("Opción invalida, por eso seguiremos con el programa")
-
-

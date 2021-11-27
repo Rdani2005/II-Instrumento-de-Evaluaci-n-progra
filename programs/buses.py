@@ -108,7 +108,8 @@ def start_program():
 
     should_continue = True
     while should_continue:
-
+        used_sits.clear()
+        counters()
         user_decision = int(input("Desea volver a correr el programa? (1. si 2.no): "))
         if user_decision == 2:
             should_continue = False
@@ -119,3 +120,4 @@ def start_program():
             print("Opción invalida, por eso seguiremos con el programa")
 
 
+start_program()

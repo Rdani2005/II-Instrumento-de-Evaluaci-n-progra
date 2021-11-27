@@ -30,6 +30,67 @@ introduced_letters = []
 right_letters = []
 
 
+# Body
+def print_budy(num):
+    dead_body = [
+        [
+            "========",
+            "|     | ",
+            "|     0 ",
+            "|    /|\\",
+            "|     | ",
+            "|    / \\",
+        ],
+        [
+            "========",
+            "|     | ",
+            "|     0 ",
+            "|    /|\\",
+            "|     | ",
+            "|       ",
+        ],
+
+        [
+            "========",
+            "|     | ",
+            "|     0 ",
+            "|    /|\\",
+            "|       ",
+            "|       ",
+
+        ],
+        [
+            "========",
+            "|     | ",
+            "|     0 ",
+            "|    /| ",
+            "|       ",
+            "|       ",
+
+        ],
+        [
+            "========",
+            "|     | ",
+            "|     0 ",
+            "|       ",
+            "|       ",
+            "|       ",
+
+        ],
+        [
+            "========",
+            "|     | ",
+            "|       ",
+            "|       ",
+            "|       ",
+            "|       ",
+        ]
+    ]
+
+    for j in dead_body[num]:
+        print(j)
+
+
 # Method to say Hello! to the user
 def welcome():
     print("Bienvenido al Juego del Ahorcado!!!")
@@ -84,6 +145,8 @@ def play_game():
             continue_playing = False
             print("Te quedaste sin vidas!!! Has perdido el juego!")
             time.sleep(5)
+        # Let's print a dead body
+        print_budy(life)
         # Let's see the status of the game
         status = ""
         missing = 0
@@ -101,7 +164,7 @@ def play_game():
             continue_playing = False
 
         else:
-            print(f"Te faltan {missing} letra")
+            print(f"Te faltan {missing} letras")
         time.sleep(5)
 
 
@@ -123,3 +186,5 @@ def start_program():
             print("Perfecto, volvamos al principio")
         else:
             print("Opción invalida, por eso seguiremos con el programa")
+
+
